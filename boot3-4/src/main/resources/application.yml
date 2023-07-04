@@ -1,0 +1,18 @@
+spring:
+  web:
+    resources:
+      add-mappings: true
+      cache:
+        period: 10
+        cachecontrol:
+          max-age: 50
+        use-last-modified: true
+  mvc:
+    contentnegotiation:
+      favor-parameter: true
+      parameter-name: type
+      media-types:
+        yaml: text/yaml
+server:
+  port: 8080
+

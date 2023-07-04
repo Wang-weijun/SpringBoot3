@@ -1,0 +1,28 @@
+server:
+  port: 9999
+
+# 配置Redis
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+person:
+  name: 张三
+  age: 18
+  child:
+    name: 儿子
+    age: 19
+  dogs:
+    - name: 小黑
+      age: 3
+    - name: 小狗
+      age: 4
+  cats:
+    c1:
+      name: 小猫
+      age: 5
+    c2: { name: 小花, age: 6 } # 对象也可以用{ }表示
+
+

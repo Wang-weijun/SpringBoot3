@@ -1,0 +1,13 @@
+logging:
+#  group:
+#    abc: com.wjwang.controller, com.wjwang.service
+  pattern:
+    console: "%d{yyyy/MM/dd HH:mm:ss} [%thread] %-5level %logger ===> %msg%n"
+  file:
+    name: log
+  logback:
+    rollingpolicy:
+#      归档
+      file-name-pattern: "${LOG_FILE}.%d{yyyy-MM-dd}.%i.log"
+      max-file-size: 1KB
+

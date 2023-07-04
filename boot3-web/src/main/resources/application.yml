@@ -1,0 +1,10 @@
+spring:
+  thymeleaf:
+    encoding: UTF-8
+  security:
+    user:
+      name: admin
+      password: 123456
+
+server:
+  port: 8081
